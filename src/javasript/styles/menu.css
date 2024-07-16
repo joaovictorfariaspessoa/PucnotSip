@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-top: 32px;
 }
 .dish {
     display: flex;
@@ -36,17 +37,34 @@
     height: 70px;
     right: -10px;
     top: -10px;
-    border-radius: 0px 37.5px 0px 42.5px;
+    border-radius: 25px
 }
 .dish-description {
-    color: rgb(70, 57, 57);
+    color: rgb(2, 2, 2);
     text-align: center;
 }
-.dish-rate {
-    color: rgb(184, 184, 66);
+.dish-rate i {
+    color: rgb(240, 216, 4);
 }
-.dish {
+.dish-price {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%;
+    }
+    #menu .section-subtitle {
+        text-align: center;
+    }
 }
