@@ -1,0 +1,7 @@
+#components_content {
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
