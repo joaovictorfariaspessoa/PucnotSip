@@ -106,12 +106,12 @@ footer {
     background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 }
 
-#facebook {
-    background-color: #4267b3;
+#github {
+    background-color: #fcfcfc;
 }
 
-#whatsapp {
-    background-color: #25d366;
+#twitter {
+    background-color: #06a3fd;
 }
 .footer-list {
     display: flex;
@@ -120,7 +120,7 @@ footer {
     list-style: none;
 }
 .footer-list .footer-link {
-    color: #a8a29e;
+    color: rgb(124, 157, 190);
     transition: all 0.4s;
 }
 .footer-list .footer-link:hover {
