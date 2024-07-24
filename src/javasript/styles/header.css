@@ -3,7 +3,7 @@ header {
   padding: 28px 8%;
   position: sticky;
   top: 0;
-  background-color: rgb(124, 157, 190);
+  background-color: #6b0800;
 }
 #navbar {
   width: 100%;
@@ -25,6 +25,12 @@ header {
   color: rgb(248, 248, 248);
   font-weight: 600;
 }
+.nav-item a {
+  text-decoration: none;
+  color: rgb(248, 248, 248);
+  font-weight: 600;
+}
+
 .nav-item.active a {
   color: rgb(248, 245, 245);
   border-bottom: 3px solid rgb(0, 0, 0);
