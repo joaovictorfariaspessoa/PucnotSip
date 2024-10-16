@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Anton", sans-serif;
 }
 
 body{
-    background-color: black;
+    background-color: #e3e3e3;
 }
 
 .interface{
@@ -13,10 +14,28 @@ body{
     margin: 0 auto;
 }
 
+header .btn-contato button, .hero-site button, .veículos button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+header .btn-contato button:hover, .hero-site button:hover, .veículos button:hover{
+    background-color: #fff;
+    color: #000000;
+}
+
 /* ESTILO DO HEADER */
 header{
     width: 100%;
     padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header .interface{
@@ -25,9 +44,6 @@ header .interface{
     align-items: center;
 }
 
-header .logo img{
-
-}
 
 header .menu-desktop nav ul{
     list-style: none;
@@ -37,3 +53,217 @@ header .menu-desktop nav ul li{
     display: inline-block;
     margin: 0 40px;
 }
+
+header .menu-desktop nav ul li a{
+    color: #fffefe;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.menu-desktop nav a:hover{
+    transform: scale(1.05);
+}
+
+header .btn-contato button{
+    width: 140px;
+    height: 50px;
+}
+
+header .btn-contato button, .hero-site button, .veículos button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+header .btn-contato button:hover, .hero-site button:hover{
+    background-color: #fff;
+    color: #000000;
+}
+
+/* ESTILO DO HERO */
+section.hero-site{
+    height: 97vh;
+    background-image: url(../images/Supra.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #000;
+}
+
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 100;
+}
+
+.hero-site .txt-hero h1 span{
+    display: block;
+    font-weight: 800;
+}
+
+
+.hero-site .txt-hero p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.hero-site button{
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/* Estilo dos Parceiros */
+section.curiosidades {
+    padding: 80px 0;
+}
+
+.curiosidades .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.curiosidades .itens-container .img-itens img{
+    max-width: 420px;
+    border-radius: 20px;
+}
+
+.curiosidades .itens-container .txt-itens h3{
+    font-size: 3em;
+    line-height: 50px;
+    color: #000000;
+}
+
+.itens-container .txt-itens h3 span{
+    font-weight: 300;
+}
+
+
+.itens-container .txt-itens p{
+    color: #000000;
+}
+
+/* Estilo dos botões de contato */
+section.contato{
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin: 30px auto;
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.contato .icons-contato a{
+    text-decoration: none;
+}
+
+.contato .icons-contato button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contato .icons-contato button i{
+    font-size: 20px;
+}
+
+.contato .icons-contato button:hover{
+    background-color: #000;
+}
+
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: #fff;
+}
+
+/* Estilo de Veículos */
+section.veículos{
+    height: 600px;
+    background-image: url(/images/ford-ranger-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.veículos > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000b9;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.veículos > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.veículos h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 100;
+}
+
+.veículos h3 span{
+    display: block;
+    font-weight: 750;
+}
+
+.veículos p{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.veículos button{
+    width: 220px;
+    height: 60px;
+}
+
